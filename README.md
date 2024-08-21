@@ -14,14 +14,14 @@
   
 - 🌱 I’m currently learning **HTML and CSS,MongoDB,Javascript**
   
-- 📫 How to reach me: **liamabraham138@gmail.com**
+- 📫 How to reach me: **liamcole0705@gmail.com**
 
 - ⚡ Fun fact: **The video game industry is worth more than the film and music industries combined.**
 
 </div>
  
 <div align="center"> 
-  <a href="mailto:liamabraham138@gmail.com">
+  <a href="mailto:liamcole0705@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-333333?style=for-the-badge&logo=gmail&logoColor=red" />
   </a>
   <a href="https://www.linkedin.com/in/liam-abraham-a82a18323/" target="_blank">
