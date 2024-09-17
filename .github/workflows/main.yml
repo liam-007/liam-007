@@ -11,12 +11,14 @@ jobs:
 
     steps:
       # Step 1: Checkout the repository
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       # Step 2: Set file permissions to avoid permission issues
       - name: Set file permissions
         run: |
-          chmod -R 777 dist || true
+          if [ -d "dist" ]; then
+            chmod -R 777 dist || true
+          fi
 
       # Step 3: Generate the snake animation
       - name: Generate Snake
@@ -27,17 +29,17 @@ jobs:
           gif_out_path: dist/github-contribution-grid-snake.gif
           svg_out_path: dist/github-contribution-grid-snake.svg
 
-      # Step 4: Add and commit the generated files
+      # Step 4: Add files and commit
       - name: Add files and commit
         run: |
           git config user.name "GitHub Action"
           git config user.email "action@github.com"
           git add dist/github-contribution-grid-snake.*
           git commit -m "Generated snake animation" || echo "No changes to commit"
-      
+
       # Step 5: Push changes to output branch
       - name: Push changes
-        run: git push origin output
+        run: git push origin output || true
 
       # Step 6: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
