@@ -39,6 +39,3 @@
 </div>
 
 <br/>
-
-## Snake eating my contribution graph
-![snake gif](https://github.com/liam-007/liam-007/blob/output/github-contribution-grid-snake.gif)
